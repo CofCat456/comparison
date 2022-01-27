@@ -491,7 +491,7 @@ function jsSort(e) {
 
 //搜尋功能
 searchBtn.addEventListener('click', function () {
-    let key = roundedEnd.value;
+    let key = roundedEnd.value.trim();
     let searchData = [];
     //搜尋data裡每一筆資料的作物名稱
     data.forEach(function (item) {
