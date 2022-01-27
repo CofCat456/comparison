@@ -15,6 +15,7 @@ const jsSelect = document.getElementById('js-select');
 const jsMoblieSelect = document.getElementById('js-moblie-select');
 const roundedEnd = document.querySelector('.rounded-end');
 const searchBtn = document.querySelector('.search');
+const showResult = document.querySelector('.show-result');
 
 //copy分類資料存放位置
 let flower = [];
@@ -500,6 +501,8 @@ searchBtn.addEventListener('click', function () {
             searchData.push(item);
         }
     });
+    //顯示查詢某某某比價結果
+    showResult.innerHTML = `查詢「${key}」的比價結果`;
     //如果沒有找到 就直接innerHtml
     //清空分頁按鈕
     if (searchData.length <= 0) {
