@@ -77,9 +77,7 @@ fruitsBtn.addEventListener('click', function (e) {
     console.log('點選水果');
 
     //將要顯示的資料賦給data 淺層複製
-    for (let key in fruit) {
-        data[key] = fruit[key];
-    }
+    data = [...fruit];
     console.log(data);
 
     //reset
@@ -105,9 +103,7 @@ flowersBtn.addEventListener('click', function (e) {
     console.log('點選花卉');
 
     //將要顯示的資料賦給data 淺層複製
-    for (let key in flower) {
-        data[key] = flower[key];
-    }
+    data = [...flower];
     console.log(data);
 
     //reset
@@ -132,9 +128,7 @@ vegetablesBtn.addEventListener('click', function (e) {
     console.log('點選蔬菜');
 
     //將要顯示的資料賦給data 淺層複製
-    for (let key in vegetable) {
-        data[key] = vegetable[key];
-    }
+    data = [...vegetable];
     console.log(data);
 
     //reset
